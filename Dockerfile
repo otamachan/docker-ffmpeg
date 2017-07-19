@@ -5,7 +5,7 @@ RUN   apk update \
       && rm -rf /var/cache/apk/* \
       && wget -q http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz \
       && tar xvf ffmpeg-release-64bit-static.tar.xz \
-      && cp ffmpeg-3.3.1-64bit-static/ffmpeg /usr/local/bin \
+      && cp ffmpeg-*-64bit-static/ffmpeg /usr/local/bin \
       && rm -rf ffmpeg-*-64bit-static*
 ENTRYPOINT ["ffmpeg"]
       
